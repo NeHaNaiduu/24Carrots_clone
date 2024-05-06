@@ -1,0 +1,865 @@
+html {
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+header .nav-bar{
+    height:120px;
+    width: 100%;
+    background-color:white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    z-index: 1;
+    padding-right: 100px;
+}
+header .nav-bar .left-list,
+header .nav-bar .right-list
+{   
+    padding: 0;
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+header .nav-bar .left-list li:hover,
+header .nav-bar .right-list li:hover{
+    color: orangered;
+    cursor: pointer;
+}
+header .nav-bar div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+header .nav-bar div h1{
+    margin-bottom: 0;
+    font-size: 40px;
+}
+header .nav-bar div h3{
+    font-size: 18px;
+    margin-top: 0;
+    color: gray;
+}
+header .nav-bar .right-list .list-button{
+    color: white;
+    background-color: orangered;
+    padding: 10px;
+    border-radius: 20px;
+    transition: all 0.2s ease;
+}
+header .nav-bar .right-list .list-button:hover{
+    background-color: rgb(255, 111, 0);
+    color: white;
+}
+main .image{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 200px;
+}
+main .image img{
+    height: 900px;
+    width: 100%;
+}
+main .image h1{
+    position: absolute;
+    font-size: 100px;
+    color: white;
+}
+main .caterings{
+    display: flex;
+    align-items: center;
+    margin-bottom: 300px;
+}
+main .caterings .info{
+    margin-right: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 100px;
+}
+main .caterings .info h2{
+    text-align: center;
+}
+main .caterings .info h1{
+    font-size: 70px;
+    margin-top: 0;
+    width: 400px;
+    text-align: center;
+}
+main .caterings .info p{
+    font-size: 20px;
+    width: 500px;
+    text-align: center;
+}
+main .caterings .info button{
+    height: 50px;
+    width: 150px;
+    border-radius: 40px;
+    border: none;
+    color: white;
+    outline: none;
+    background-color: orangered;
+    cursor: pointer;
+    transition: all ease;
+}
+main .caterings .info button:hover{
+    background-color: orange;
+}
+main .caterings .images{
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    white-space: nowrap;
+    border-top-left-radius: 200px;
+}
+main .caterings .images .slide{
+    overflow-x: auto;
+    display: inline-block;
+    scroll-snap-type: start;
+    width: auto;
+}
+main .caterings .images .slide img{
+    height: 400px;
+}
+main .type-of-events{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-bottom: 200px;
+}
+main .type-of-events .images{
+    background: url(images/couplee.jpg);
+    width: 500px;
+    height: 800px;
+    background-size: cover;
+    border-top-left-radius: 250px;
+    border-top-right-radius: 250px;
+}
+main .type-of-events .description{
+    display: flex;
+    flex-direction: column;
+}
+main .type-of-events .description .info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+main .type-of-events .description h1{
+    font-size: 70px;
+    width: 500px;
+}
+main .type-of-events .description .info .types{
+    display: flex;
+    flex-direction: column;
+    margin-right: 70px;
+    padding-top: 100px;
+}
+main .type-of-events .description .info .types a{
+    color: gray;
+    font-size: 20px;
+    text-decoration: none;
+    margin-bottom: 20px;
+    transition: all ease;
+}
+main .type-of-events .description .info .types a:hover{
+    color: orangered;
+}
+main .type-of-events .description .info .content{
+    width: 350px;
+}
+main .type-of-events .description .info .content div{
+    display: none;
+    padding-top: 200px;
+    margin-top: -100px;
+}
+main .type-of-events .description .info .content div:target{
+    display: block;
+}
+main .type-of-events .description .info .content button{
+    height: 40px;
+    width: 150px;
+    border-radius: 30px;
+    border: 1px solid orangered;
+    background-color: white;
+    color: orangered;
+    cursor: pointer;
+    transition: all ease;
+}
+main .type-of-events .description .info .content button:hover{
+    color: orange;
+    border-color: orange;
+}
+main .venue-decide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 600px;
+}
+main .venue-decide .wedding-stage{
+    position: relative;
+}
+main .venue-decide .wedding-stage img{
+    height: 600px;
+    width: 1500px;
+}
+main .venue-decide .description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 430px;
+    left: 400px;
+    background-color: white;
+    width:450px;
+    padding: 80px 100px;
+    border-radius: 50%;
+}
+main .venue-decide .description button{
+    height: 50px;
+    width: 200px;
+    color: white;
+    background-color: rgb(166, 80, 4);
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+main .venue-decide .description h1{
+    font-size: 90px;
+    text-align: center;
+    margin: 0;
+}
+main .venue-decide .description h3{
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+main .venue-decide .description p{
+    width: 515px;
+    margin-bottom: 30px;
+    margin-top: 40px;
+}
+main .venue-decide .description button:hover{
+    background-color: orange;
+}
+main .venue-gallery{
+    overflow-x: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: linear-gradient(to bottom, white 20%, rgb(191, 190, 190));
+}
+main .venue-gallery .venue-gallery-container .venue-slide{
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    flex: 0 0 auto;
+    margin-right: 20px;
+}
+.venue-gallery .venue-gallery-container {
+    display: inline-flex;
+    white-space: nowrap;
+}
+main .venue-gallery .venue-gallery-container .venue-slide img{
+    height: 600px;
+}
+main .venue-gallery::-webkit-scrollbar{
+    display: none;
+}
+main .business-description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    background-color: rgb(195, 192, 192);
+}
+main .business-description h1{
+    font-size: 90px;
+    text-align: center;
+    width: 40%;
+    margin: 0;
+    color: rgb(2, 56, 2);
+}
+main .business-description p{
+    font-size: 20px;
+    text-align: center;
+    width: 60%;
+    margin-top: 40px;
+}
+main .team-section{
+    padding-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 200px;
+    background:linear-gradient(to bottom, rgb(195, 192, 192) 20%, white)
+}
+main .team-section img{
+    height: 600px;
+    width: 800px;
+    cursor: pointer;
+}
+main .services-section-description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 200px;
+}
+main .services-section-description h1{
+    font-size: 90px;
+    width: 50%;
+    margin: 0;
+    text-align: center;
+}
+main .services-section-description p{
+    font-size: 20px;
+    width: 60%;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+main .services-section-description button{
+    height: 50px;
+    width: 250px;
+    color: white;
+    background-color: rgb(132, 40, 7);
+    border: none;
+    outline: none;
+    border-radius: 30px;
+}
+main .services-section-description button:hover{
+    background-color: orangered;
+    cursor: pointer;
+}
+main .services-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 200px;
+}
+main .services-section .left,
+main .services-section .right{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+main .services-section .left .first,
+main .services-section .left .second,
+main .services-section .right .first,
+main .services-section .right .second{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main .services-section .middle{
+    background: url('images/wed-venue.jpg');
+    background-size: cover;
+    height: 700px;
+    width: 30%;
+    border-top-left-radius: 250px;
+    border-top-right-radius: 250px;
+}
+main .services-section .left .first h2,
+main .services-section .left .second h2,
+main .services-section .right .first h2,
+main .services-section .right .second h2{
+    font-size: 30px;
+}
+main .services-section .left .first p,
+main .services-section .left .second p,
+main .services-section .right .first p,
+main .services-section .right .second p{
+    font-size: 20px;
+}
+main .services-section .left .first button,
+main .services-section .left .second button,
+main .services-section .right .first button,
+main .services-section .right .second button{
+    height: 50px;
+    width: 200px;
+    border-radius: 30px;
+    border: 1px solid orangered;
+    background-color: white;
+    color: orangered;
+    outline: none;
+    cursor: pointer;
+}
+main .services-section .left .first button:hover,
+main .services-section .left .second button:hover,
+main .services-section .right .first button:hover,
+main .services-section .right .second button:hover{
+    color: orange;
+    border: 1px solid orange;
+}
+main .services-section .left .second button{
+    margin-top: 20px;
+}
+main .services-section .left .second{
+    margin-top: 30px;
+}
+main .happy-clients{
+    height: 1000px;
+    background-color: rgb(1, 50, 1);
+    color: white;
+}
+main .happy-clients .opinions{
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    cursor: grabbing;
+}
+main .happy-clients .opinions .opinion-scroll {
+    flex: 0 0 auto;
+    width: 1500px;
+    margin-right: 10px; 
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+main .happy-clients .opinions::-webkit-scrollbar{
+        display: none;
+}
+main .happy-clients h1{
+    font-size: 70px;
+    text-align: center;
+    padding-top: 100px;
+}
+main .happy-clients .describe{
+    font-size: 20px;
+    text-align: center;
+    padding: 0 420px;
+    margin-bottom: 100px;
+}
+main .happy-clients .opinions .one .image-one,
+main .happy-clients .opinions .two .image-two,
+main .happy-clients .opinions .three .image-three,
+main .happy-clients .opinions .four .image-four
+{
+    height: 500px;
+}
+main .happy-clients .opinions .one .image-one{
+    background: url('images/waiter.jpg');
+    background-size: cover;
+    width: 500px;
+}
+main .happy-clients .opinions .two .image-two{
+    background: url('images/cooks.jpg');
+    background-size: cover;
+    width: 500px;
+}
+main .happy-clients .opinions .three .image-three{
+    background: url('images/grand-eve.jpg');
+    background-size: cover;
+    width: 700px;
+}
+main .happy-clients .opinions .four .image-four{
+    background: url('images/wedding.jpg');
+    background-size: cover;
+    width: 500px;
+}
+main .happy-clients .opinions .one,
+main .happy-clients .opinions .two,
+main .happy-clients .opinions .three,
+main .happy-clients .opinions .four{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+main .happy-clients .opinions .one .one-info,
+main .happy-clients .opinions .two .two-info,
+main .happy-clients .opinions .three .three-info,
+main .happy-clients .opinions .four .four-info{
+    width: 35%;
+}
+main .happy-clients .opinions .one .one-info h2,
+main .happy-clients .opinions .two .two-info h2,
+main .happy-clients .opinions .three .three-info h2,
+main .happy-clients .opinions .four .four-info h2{
+    font-size: 30px;
+}
+main .happy-clients .opinions .one .one-info h6,
+main .happy-clients .opinions .two .two-info h6,
+main .happy-clients .opinions .three .three-info h6,
+main .happy-clients .opinions .four .four-info h6{
+    font-size: 15px;
+    margin: 0;
+}
+main .happy-clients .opinions .one .one-info h6,
+main .happy-clients .opinions .two .two-info h6,
+main .happy-clients .opinions .three .three-info h6,
+main .happy-clients .opinions .four .four-info h6{
+    font-size: 15px;
+}
+main .whats-cookin{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main .whats-cookin .cooking-grid{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+main .whats-cookin .cooking-grid .left-part,
+main .whats-cookin .cooking-grid .right-part{
+    display: flex;
+    flex-direction: column;
+}
+main .whats-cookin .cooking-grid .left-part p{
+    width: 550px;
+    font-size: 20px;
+    line-height: 30px;
+}
+main .whats-cookin .cooking-grid .right-part p{
+    width: 350px;
+    font-size: 20px;
+    line-height: 30px;
+}
+main .whats-cookin .cooking-grid .left-part h2{
+    font-size: 35px;
+}
+main .whats-cookin .cooking-grid .right-part h2{
+    width: 400px;
+    font-size: 35px;
+}
+main .whats-cookin .cooking-grid .left-part
+img,
+main .whats-cookin .cooking-grid .right-part img{
+    height: 300px;
+}
+main .whats-cookin .cooking-grid .left-part img{
+    width: 600px;
+}
+main .whats-cookin .cooking-grid .right-part img{
+    width: 500px;
+}
+main .whats-cookin .cooking-grid button{
+    height: 50px;
+    width: 200px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    text-align: left;
+    font-weight: bold;
+    margin-top: 16px;
+}
+main .whats-cookin .cooking-grid .left-part button{
+    color: white;
+    background-color: rgb(253, 105, 51);
+}
+main .whats-cookin .cooking-grid .right-part button{
+    background-color: black;
+    color: white;
+}
+main .whats-cookin h1{
+    font-size: 60px;
+    margin-bottom: 100px;
+}
+main .whats-cookin .more{
+    color: rgb(253, 105, 51);
+    border: 1px solid rgb(253, 105, 51);
+    background-color: white;
+    height: 50px;
+    border-radius: 30px;
+    width: 300px;
+    cursor: pointer;
+    margin-top: 60px;
+    margin-bottom: 100px;
+}
+main .whats-cookin .more:hover{
+    border-color: orange;
+    color: orange;
+}
+main .experience-share{
+    height: 700px;
+    padding-top: 150px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 200px;
+    padding-bottom: 150px;
+}
+main .experience-share .left-section{
+    width: 500px;
+}
+main .experience-share .left-section h1{
+    font-size: 80px;
+    color: rgb(2, 48, 2);
+    margin-bottom: 0;
+}
+main .experience-share .left-section p{
+    font-size: 25px;
+    color: gray;
+    margin-top: 10px;
+    margin-bottom: 100px;
+}
+main .experience-share .left-section .socials ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    font-size: 20px;
+}
+main .experience-share .left-section .socials ul li{
+    color: rgb(4, 62, 4);
+}
+main .experience-share .left-section .socials ul li:hover{
+    color: orangered;
+    cursor: pointer;
+}
+main .experience-share .right-section{
+    width:50%
+}
+main .experience-share .right-section .image-one{
+    background: url('images/drink.jpg');
+    background-size: cover;
+    height: 200px;
+    width: 200px;
+    transform: rotate(15deg);
+    border: 10px solid white;
+    box-shadow: 2px 5px 10px ;
+    transition: all 0.2s ease;
+}
+main .experience-share .right-section .image-one:hover{
+    cursor: pointer;
+    opacity: 0.9;
+}
+main .experience-share .right-section .image-collage{
+    display: flex;
+}
+main .experience-share .right-section .image-collage .image-two{
+    background: url('images/ice-cream.jpg');
+    background-size: cover;
+    height: 300px;
+    width: 200px;
+    transform: rotate(-10deg);
+    border: 10px solid white;
+    box-shadow: 2px 5px 10px;
+    transition: all 0.2s ease;
+}
+main .experience-share .right-section .image-collage .image-three{
+    background: url('images/event.jpg');
+    background-size: cover;
+    height: 200px;
+    width: 300px;
+    transform: rotate(13deg);
+    border: 10px solid white;
+    box-shadow: 2px 5px 10px ;
+    transition: all 0.2s ease;
+}
+main .experience-share .right-section .image-collage .image-two:hover,
+main .experience-share .right-section .image-collage .image-three:hover{
+    opacity: 0.9;
+    cursor: pointer;
+}
+main .signup{
+    display: flex;
+    justify-content: space-between;
+    height: 500px;
+}
+main .signup .left-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(253, 105, 51);
+    width: 100%;
+    color: white;
+    padding-left: 120px;
+}
+main .signup .left-section h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+main .signup .left-section h3{
+    margin-bottom: 30px;
+    width: 500px;
+}
+main .signup .left-section .mail input{
+    height: 50px;
+    font-size: 15px;
+    width: 300px;
+    border-radius: 30px;
+    padding-left: 20px;
+    border: none;
+    outline: none;
+    color: orangered;
+}
+main .signup .left-section .mail button{
+    height: 50px;
+    width: 150px;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(174, 48, 2);
+    color: white;
+    transition: all 0.4s ease;
+    margin-left: 20px;
+}
+main .signup .left-section .mail button:hover span{
+    padding-left: 10px;
+}
+main .signup .left-section .mail button:hover{
+    background-color: rgb(246, 80, 20);
+}
+main .signup .left-section p{
+    margin-top: 30px;
+}
+main .signup .right-section img{
+    width: 750px;
+}
+footer{
+    padding-top: 40px;
+    padding-left: 100px;
+    padding-right: 100px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(238, 236, 236);
+}
+footer .upper-section{
+    display: flex;
+    justify-content: space-between;
+}
+footer .upper-section .info{
+    display: flex;
+    flex-direction: column;
+}
+footer .upper-section .info .company{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer .upper-section .info h1{
+    margin: 0;
+    font-size: 40px;
+}
+footer .upper-section .info h3{
+    color: gray;
+    margin: 0;
+}
+footer .upper-section .info p{
+    width: 300px;
+    font-size: 17px;
+    line-height: 30px;
+    text-align: center;
+    margin-top: 40px;
+}
+footer .upper-section .first-column,
+footer .upper-section .second-column,
+footer .upper-section .third-column{
+    display: flex;
+    flex-direction: column;
+}
+footer .upper-section .first-column ul,
+footer .upper-section .second-column ul,
+footer .upper-section .third-column ul{
+    list-style: none;
+    padding: 0;
+    line-height: 35px;
+}
+footer .upper-section .first-column ul li a,
+footer .upper-section .second-column ul li a,
+footer .upper-section .third-column ul li a{
+    text-decoration: none;
+    color: black;
+}
+footer .upper-section .socials{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+footer .upper-section .socials ul{
+    list-style: none;
+    padding: 0;
+    line-height: 40px;
+}
+footer .upper-section .socials ul li{
+    padding: 0;
+}
+footer .upper-section .socials ul li a{
+    text-decoration: none;
+    color: black;
+}
+footer .upper-section .first-column h3 span,
+footer .upper-section .second-column h3 span,
+footer .upper-section .third-column h3 span,
+footer .upper-section .fourth-column h3 span{
+    color: orangered;
+}
+footer .middle-section{
+    display: flex;
+    flex-direction: column;
+}
+footer .middle-section .upper,
+footer .middle-section .middle{
+    display: flex;
+    align-items: center;
+} 
+footer .middle-section .upper h3{
+    margin-right: 66px;
+}
+footer .middle-section .upper .dot{
+    background-color: black;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 4px;
+    width: 4px;
+    border-radius: 50%;
+}
+footer .middle-section .lower h3{
+    margin-right: 70px;
+}
+footer .middle-section .middle h3{
+    margin-right: 55px;
+}
+footer .middle-section .lower{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer .middle-section .lower .left-section,
+footer .middle-section .lower .right-section{
+    display: flex;
+    align-items: center;
+}
+footer .middle-section .lower .right-section .creative-co{
+    margin-left: 20px;
+    border: 2px solid;
+    width: 50px;
+    height: 60px;
+    border-radius: 50%;
+    font-size: 7.5px;
+    font-weight: bold;
+    padding-left: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer .lower-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer .lower-section .policy{
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+footer .lower-section .policy a{
+    text-decoration: none;
+    color: black;
+}
+footer .lower-section .policy .dot{
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: black;
+}
